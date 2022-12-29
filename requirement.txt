@@ -3,3 +3,5 @@ keras
 transformers
 cleantext
 tensorflow-macos
+pandas
+numpy
