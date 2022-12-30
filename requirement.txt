@@ -9,3 +9,5 @@ nltk
 spacy
 xgboost
 seaborn
+imbalanced-learn
+matplotlib
