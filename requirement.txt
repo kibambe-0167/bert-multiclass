@@ -8,3 +8,4 @@ numpy
 nltk
 spacy
 xgboost
+seaborn
