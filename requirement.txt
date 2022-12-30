@@ -7,3 +7,4 @@ pandas
 numpy
 nltk
 spacy
+xgboost
