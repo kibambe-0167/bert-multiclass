@@ -5,3 +5,5 @@ cleantext
 tensorflow-macos
 pandas
 numpy
+nltk
+spacy
