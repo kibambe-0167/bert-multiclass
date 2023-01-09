@@ -19,3 +19,6 @@ source envs/bin/activate
 
 ### install packages, in mac-os, remember to use tenforlow-macos
 python -m pip install -r requirement.txt
+
+
+https://huggingface.co/docs/transformers/tasks/sequence_classification
