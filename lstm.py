@@ -12,11 +12,10 @@ _INPUT_LEN = 500
 _BATCH_SIZE = 256
 _EPOCH = 4
 
-data = pd.DataFrame()
-
+data = pd.DataFrame("./clean_data/shona.csv" )
 
 X_train, X_test, y_train, y_test = train_test_split(
-  data['text'],
+  data['shona'],
   data['target'],
   test_size=.25,
   stratify=data['target'],
@@ -46,7 +45,7 @@ y_test.reset_index(drop=True,inplace=True)
 # create tokenizer object and set number of words for tokenizer.
 # fit train text on class object.
 text_tok_obj = Tokenizer(num_words=_NUM_WORDS)
-text_tok_obj.fit_on_texts(X_train['text'].astype(str) )
+text_tok_obj.fit_on_texts(X_train['shona'].astype(str) )
 
 # tokenize the text .
 X_train_tok = pad_sequences( X_train, maxlen=_INPUT_LEN, padding='post' )
